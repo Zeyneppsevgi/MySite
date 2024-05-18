@@ -11,10 +11,11 @@
                                                             {% block title %} {% endblock %} | Blogapp</title>
 </head>
 <body>
-                              <ul>
-                                              <li><a href="">Home</a></li>
-                                              <li><a href="">Blogs</a></li>                                             
-                               </ul>
+                             <nav class="navbar navbar-dark bg-primary">
+                                                            <div class="container">
+                                                                                         <a class="navbar-brand" href="">Blogapp</a> 
+                                                            </div>
+                             </nav>
                                {% block content %}{% endblock %}
 
                                <script src="{% static 'js/bootstrap.min.js' %}"></script>
