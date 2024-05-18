@@ -11,11 +11,30 @@
                                                             {% block title %} {% endblock %} | Blogapp</title>
 </head>
 <body>
-                             <nav class="navbar navbar-dark bg-primary">
+                             <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
                                                             <div class="container">
                                                                                          <a class="navbar-brand" href="">Blogapp</a> 
+                                                                                         <ul class="navbar-nav me-auto">
+                                                                                                                        <li class=""nav-item>
+                                                                                                                                                      <a class="nav-link" href="">Home</a>
+                                                                                                                        </li>
+                                                                                                                        <li class=""nav-item>
+                                                                                                                                                      <a class="nav-link" href="">Blogs</a>
+                                                                                                                        </li>
+                                                                                         </ul>
                                                             </div>
                              </nav>
+                             <div class="container">
+                                                            <div class="row">
+                                                                             <div class=""col-3>
+                                                                                          menü
+                                                                             </div> 
+                                                                             <div class=""col-9>
+                                                                                          içerik
+                                                                             </div>              
+                                                            </div>
+
+                             </div>
                                {% block content %}{% endblock %}
 
                                <script src="{% static 'js/bootstrap.min.js' %}"></script>
